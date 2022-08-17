@@ -367,11 +367,17 @@ span{
     padding-left: 7px;
     font-size: 16px;
 }
-.you-details-content input:nth-of-type(3){
+.you-details-content button{
+    height: 35px;
     width: 140px;
     cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    padding-left: 7px;
+    font-size: 16px;
 }
-.you-details-content input:nth-of-type(3):hover{
+.you-details-content button:hover{
     transform:scale3d(90deg);
     color: rgb(36, 33, 33);
   box-shadow: 0 5px 15px rgba(60, 5, 100, 0.795);
@@ -714,6 +720,44 @@ span{
 .right-contact form input:focus{
     font-size: 16px;
 }
+/* destination */
+.categories ul{
+    display: flex;
+    margin: 20px 0 20px 0;
+    justify-content: center;
+}
+.categories ul li{
+    list-style: none;
+    background-color: #eee;
+    margin-right: 8px;
+    margin-top: 20px;
+    padding: 8px 21px;
+    border-radius: 3px;
+    display: flex;
+    cursor: pointer;
+}
+.categories ul li.active{
+    background: #2196f3;
+}
+ .product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ .product .destination{
+    position: relative;
+    width: 32%;
+    height: 300px;
+    margin: 5px;
+}
+ .product .destination img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* contact */
 @media(max-width:600px){
     .navigation{
@@ -769,6 +813,19 @@ span{
 @media(max-width:811px){
     .blog1{
         width: 45%;
+    }
+    .product{
+        justify-content: space-between;
+    }
+    .product .destination{
+        width: 40%;
+        margin:20px auto;
+    }
+}
+@media(max-width:762px){
+    .product .destination{
+        width:80%;
+        margin: 20px auto;
     }
 }
 @media(max-width:576px){
@@ -827,6 +884,9 @@ span{
 @media(max-width:511px){
     .social{
         flex-direction: column;
+    }
+    .categories ul{
+        flex-wrap: wrap;
     }
 }
 @media(max-width:595px){

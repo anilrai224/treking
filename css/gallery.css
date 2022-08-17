@@ -22,7 +22,6 @@
 }
 .main-gallery .gallery{
     display: flex;
-    flex-direction: row;
     justify-content: space-between; 
 }
 .main-gallery .gallery .box{
@@ -34,4 +33,22 @@
     width: 100%;
     padding-bottom: 15px;
     border-radius: 5px;
+}
+@media(max-width:750px){
+    .main-gallery .gallery .box{
+        width: 45%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .main-gallery .gallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width:582px){
+    .main-gallery .gallery .box{
+        width: 80%;
+        margin: 0 auto;
+    }
 }

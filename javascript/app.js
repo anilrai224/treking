@@ -7,3 +7,5 @@ $(document).ready(function(){
       nextArrow:".next-btn",
     });
   });
+
+  
