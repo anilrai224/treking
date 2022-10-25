@@ -8,9 +8,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins';
 }
+/* scroll Top  */
+#scrollUp {
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    bottom: 20px;
+    right: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#scrollUp span {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+/* scroll Top */
 header{
     z-index: 5;
     background-color:#5DADE2;
