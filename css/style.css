@@ -577,31 +577,35 @@ span{
     background-attachment: fixed;
     position: relative;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
-.scroll-image .p1{
-    padding-top: 20px;
-    position: absolute;
-    color: #0e3742;
-    top: 50px;
-    left: 100px;
-    font-size: 100px;
-    text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-    line-height: 0.7em;
-    outline: none;
-    animation: animation1 5s linear infinite;
+.scroll-image h2{
+    font-size: 80px;
+    letter-spacing: 4px;
+    cursor: pointer;
 }
-.scroll-image .p2{
-    position: absolute;
-    right: 100px;
-    bottom: 120px;
-    color: #0e3742;
-    font-size: 100px;
-    text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
-    line-height: 0.7em;
-    outline: none;
-    animation: animation1 5s linear infinite;
+.scroll-image h2 span{
+    transition: 0.5s;
+}
+.scroll-image h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+.scroll-image h2:hover span:nth-child(1)::after{
+    content: "'";
+}
+.scroll-image h2:hover span:nth-child(2){
+    margin-left: 40px;
+}
+h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
 }
 /* @keyframes animation1{
     0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
